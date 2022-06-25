@@ -17,9 +17,9 @@ Contents
 .. toctree::
 
    introduction
-   install
-   configure 
-   south Plugin
-   north Plugin
-   notification Plugin
+   installation
+   configuration
+   south_plugin
+   north_plugin
+   notification_plugin
    usecase
