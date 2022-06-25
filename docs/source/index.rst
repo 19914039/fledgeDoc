@@ -21,5 +21,5 @@ Contents
    Configure 
    South Plugin
    North Plugin
-   Alert Plugin
+   Notification Plugin
    Usecase
