@@ -16,10 +16,10 @@ Contents
 
 .. toctree::
 
-   Introduction
-   Install
-   Configure 
-   South Plugin
-   North Plugin
-   Notification Plugin
-   Usecase
+   introduction
+   install
+   configure 
+   south Plugin
+   north Plugin
+   notification Plugin
+   usecase
