@@ -1,9 +1,8 @@
-Template for the Read the Docs tutorial
+Document Guide for Fledge with Raspberry Pi
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This Repository contains the documenation for Installing Setting Up and Configuring Fledge in Raspberry Pi and simple usecase demonstrations.
 
-Read the tutorial here:
+Read the documentation here:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+https://fledge-raspi.readthedocs.io/en/latest/
