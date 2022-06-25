@@ -18,7 +18,7 @@ Contents
 
    introduction
    installation
-   configuration
+   configure
    south_plugin
    north_plugin
    notification_plugin
