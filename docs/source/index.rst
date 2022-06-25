@@ -5,7 +5,7 @@ Welcome to fledge-raspi documentation!
 Fledge project has its official documentation. while building and using the fledge as per the offincial dicumentation, I felt some gaps in the documentation that will not completely explain to the very basic level. This guide is intened to explain at the basic level by keeping in mind that it would be helpful the ones who wants to start from very basic.
 
 Check out the :doc:`installation` section for further information, including
-how to :ref:`configure` the fledge and its associated plugins.
+how to :doc:`configure` the fledge and its associated plugins.
 
 .. note::
 
