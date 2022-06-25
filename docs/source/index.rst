@@ -1,10 +1,8 @@
-Welcome to Lumache's documentation!
+Welcome to fledge-raspi documentation!
 ===================================
 
-**fledge-raspi** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**fledge-raspi** is a documentation guide for installing, settingup and configuring the fledge and its associated plugins to use with raspberry pi.
+Fledge project has its official documentation. while building and using the fledge as per the offincial dicumentation, I felt some gaps in the documentation that will not completely explain to the very basic level. This guide is intened to explain at the basic level by keeping in mind that it would be helpful the ones who wants to start from very basic.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
