@@ -23,7 +23,8 @@ There are two ways to install fledge:
 
 .. code-block:: console
 
-  sudo apt-get install <package name>
+  $ sudo apt-get install <package name>
+  $
   
 Here we will be looking at installing the Fledge in Raspberry Pi 4 Model B, 8GB RAM, running Ubuntu Mate 20.04. The official documentation guide available at https://fledge-iot.readthedocs.io/en/latest/ does not cover this specific usecase and further the fledge repository is not available for Ubuntu mate 20.04, with aarch64 architecture. 
 Thus the only option left with us is use the source code, compile, build and then install which will be explained in the further subsections.
@@ -35,12 +36,13 @@ The following prerequisites are needed to build fledge from the source code. The
 
 .. code-block:: console
 
-  apt-get install avahi-daemon curl
+  $ apt-get install avahi-daemon curl
   apt-get install cmake g++ make build-essential autoconf automake uuid-dev
   apt-get install libtool libboost-dev libboost-system-dev libboost-thread-dev libpq-dev libssl-dev libz-dev
   apt-get install python-dev python3-dev python3-pip python3-numpy
   apt-get install postgresql
   apt-get install sqlite3 libsqlite3-dev
+  $
 
 Source Directory
 ===========
