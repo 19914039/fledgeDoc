@@ -23,26 +23,8 @@ There are two ways to install fledge:
 
 .. code-block:: console
 
-  $ sudo apt-get install <package name>
-  $
+  sudo apt-get install <package name>
   
-.. code-block:: console
-
-  $ fledge status
-  Fledge v1.8.0 running.
-  Fledge Uptime:  9065 seconds.
-  Fledge records: 86299 read, 86851 sent, 0 purged.
-  Fledge does not require authentication.
-  === Fledge services:
-  fledge.services.core
-  fledge.services.storage --address=0.0.0.0 --port=42583
-  fledge.services.south --port=42583 --address=127.0.0.1 --name=Sine
-  fledge.services.notification --port=42583 --address=127.0.0.1 --name=Fledge Notifications
-  === Fledge tasks:
-  fledge.tasks.purge --port=42583 --address=127.0.0.1 --name=purge
-  tasks/sending_process --port=42583 --address=127.0.0.1 --name=PI Server
-  $
-
 Here we will be looking at installing the Fledge in Raspberry Pi 4 Model B, 8GB RAM, running Ubuntu Mate 20.04. The official documentation guide available at https://fledge-iot.readthedocs.io/en/latest/ does not cover this specific usecase and further the fledge repository is not available for Ubuntu mate 20.04, with aarch64 architecture. 
 Thus the only option left with us is use the source code, compile, build and then install which will be explained in the further subsections.
 
