@@ -16,6 +16,12 @@ Fledge is an open-source project ment for industrial IoT (IIoT) applications. It
 - **Notification servives** used to trigger some actions or notifications upon matching of specified conditions.
 |fledge_architecture|
 
+The beauty of fledge is
+
+- Lighter and can run on Edge IoT devices like Raspberry Pi
+- Supports many typical industrial protocols like Modbus, IEC-101, IEC-104, IEC-61850 etc.
+- Modular architecture allows us to install specific modules that we need instaed of installing the whole package.
+
 The following links can be used as reference for official documentation
 
 - Link for Fledge: https://www.lfedge.org/projects/fledge/
