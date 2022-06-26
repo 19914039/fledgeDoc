@@ -185,14 +185,8 @@ $ sudo apt install /var/cache/apt/archives/fledge-gui_1.9.2next-224.deb
 
 Verify
 -------
-Now
-; open any
 
-browser & enter the next -224 . deb
+To verify the fledge-gui installation open any browser & enter the ip address (port is not required) or you can alos simply type localhost in case you are opening the browser in the host device. This should open an interactive fledge web gui in the browser. Through ip address it can be accessed from any sysytem browser in the same LAN.
 
-Ipaddress only , post is not required .
-even without fledgegui , rest api works.
-.
-could get interact
-
-with Hedge using cult ( via REST api) .
+.. note::
+  Even without fledgegui , we could interact with fledge using curl via REST api. But fledge-gui will prove easy way for the same.
