@@ -10,4 +10,5 @@ In this we will be looking at Installing the fledge & its plugins from the sourc
 - Install from a downloaded •deb package
 - Add fledge repository to apt sources list of raspberry pi and then install using
 
->> sudo apt-get install <package name>
+
+>>> sudo apt-get install <package name>
