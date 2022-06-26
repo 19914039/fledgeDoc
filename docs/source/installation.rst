@@ -12,4 +12,6 @@ In this we will be looking at Installing the fledge & its plugins from the sourc
 
 .. code-block:: console
 
+$ 
 sudo apt-get install <package name>
+$
