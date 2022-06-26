@@ -3,7 +3,8 @@ Introduction
 .. Images
 .. |fledge_architecture| image:: images/fledge_architecture.png
 
-Fledge is an open-source project ment for industrial IoT (IIoT) applications. It has mainly the following components
+Fledge is an open-source project ment for industrial IoT (IIoT) applications. It has mainly the following components:
+
 - **South services**: used to interact with the sensors and actuators (downstream data flow)
 - **North services**: used to interact with the cloud or any other (may be another fledge) (upstream data flow)
 - **Storage**: used to buffer the readings/data and will provide temporary storage. (default is SQLite)
