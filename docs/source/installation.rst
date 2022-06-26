@@ -176,8 +176,11 @@ it will build a •deb package & store it to *package/build* directory. we can g
   
 Install
 --------
-sudo cp packages/build/fledge-gui_1.9.2next-224.deb /var/cache/apt/archives/.
-$ sudo apt install /var/cache/apt/archives/fledge-gui_1.9.2next-224.deb
+
+.. code-block:: console
+
+  sudo cp packages/build/fledge-gui_1.9.2next-224.deb /var/cache/apt/archives/.
+  sudo apt install /var/cache/apt/archives/fledge-gui_1.9.2next-224.deb
 
 .. note::
 
