@@ -37,6 +37,10 @@ The following prerequisites are needed to build fledge from the source code. The
 
   sudo apt-get install avahi-daemon curl cmake g++ make build-essential autoconf automake uuid-dev libtool libboost-dev libboost-system-dev libboost-thread-dev libpq-dev libssl-dev libz-dev python-dev python3-dev python3-pip python3-numpy postgresql sqlite3 libsqlite3-dev libcurl4-openssl-dev
 
+.. note::
+
+  ``In the actual Fledge installation support page *libcurl4-openssl-dev* is not given. If we don't install it then we will get an error curl.h file error (No such File) during the fledge compilation.``
+
 Source Directory
 ===========
 
