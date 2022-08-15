@@ -35,7 +35,7 @@ The following prerequisites are needed to build fledge from the source code. The
 
 .. code-block:: console
 
-  sudo apt-get install avahi-daemon curl cmake g++ make build-essential autoconf automake uuid-dev libtool libboost-dev libboost-system-dev libboost-thread-dev libpq-dev libssl-dev libz-dev python-dev python3-dev python3-pip python3-numpy postgresql sqlite3 libsqlite3-dev
+  sudo apt-get install avahi-daemon curl cmake g++ make build-essential autoconf automake uuid-dev libtool libboost-dev libboost-system-dev libboost-thread-dev libpq-dev libssl-dev libz-dev python-dev python3-dev python3-pip python3-numpy postgresql sqlite3 libsqlite3-dev libcurl4-openssl-dev
 
 Source Directory
 ===========
