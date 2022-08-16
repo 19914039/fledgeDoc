@@ -131,7 +131,7 @@ for installing fledge GUI  we need to install the dependency tools nodejs versio
 
 .. note::
 
-  node js can be installed simply by *sudo apt-get install nodejs*. But this will install latest version, that fledge-gui may not support. The specific version of supported nodejs is 14.x. Please install this version only. In case you already had nodejs installed in your device check the version first by *node --version* and if it is not 14.x then first uninstall it by *sudo apt remove nodejs* and then re-install using the bellow command
+  node js can be installed simply by *sudo apt-get install nodejs*. But this will install latest version, that fledge-gui may not support. The specific version of supported nodejs is 14.x. Please install this version only. In case you already had nodejs installed in your device check the version first by *node -V* and if it is not 14.x then first uninstall it by *sudo apt remove nodejs* and then re-install using the bellow command
 
 .. code-block:: console
 
@@ -146,7 +146,7 @@ to install npm
   
 .. note::
 
-  Incase if you get any error installing something like unment dependency error and installation exit with error, the use aptitute to fix the issue.
+  Incase if you get any error installing something like unment dependency error and installation exit with error, then use aptitute to fix the issue.
  
 Install first aptitute and then install npm using aptitude. It may give some possible solution ask to proceed Yes or No. Enter Y
 
@@ -155,7 +155,7 @@ Install first aptitute and then install npm using aptitude. It may give some pos
   sudo apt-get install aptitude
   sudo aptitude install npm
 
-Now if you can check by simply looking for the version using *npm --version*, it should show the installed version if it is success. after this we need to install *yarn* using npm. to do this use the following command
+Now if you can check by simply looking for the version using *npm -V*, it should show the installed version if it is success. after this we need to install *yarn* using npm. to do this use the following command
 
 .. code-block:: console
 
