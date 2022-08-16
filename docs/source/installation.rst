@@ -127,18 +127,34 @@ Download Source Code
 Prerequisite
 -------
 
-for installing fledge GUI  we need another dependency tool and is nodejs.
+for installing fledge GUI  we need to install the dependency tools nodejs version 14.x, npm and yarn.
 
 .. note::
 
-  node js can be installed simply by *sudo apt-get install nodejs*. But 
-  this will install latest version, that fledge-gui may not support. The specific version of supported nodejs is 14.x. Please install this version only. In case you already had nodejs installed in your device then first uninstall it by *sudo apt remove nodejs* and then re-install using the bellow command
+  node js can be installed simply by *sudo apt-get install nodejs*. But this will install latest version, that fledge-gui may not support. The specific version of supported nodejs is 14.x. Please install this version only. In case you already had nodejs installed in your device check the version first by *node --version* and if it is not 14.x then first uninstall it by *sudo apt remove nodejs* and then re-install using the bellow command
 
 .. code-block:: console
 
   curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
   sudo apt-get install nodejs
+  
+to install npm 
 
+.. code-block:: console
+
+  sudo apt install -y npm
+  
+.. note::
+
+  Incase if you get any error installing something like unment dependency error and installation exit with error, the use aptitute to fix the issue.
+ 
+Install first aptitute and then install npm using aptitude. It may give some possible solution ask to proceed Yes or No. Enter Y
+
+.. code-block:: console
+
+  sudo apt-get install aptitude
+  sudo aptitude install npm
+  
 Build
 -------
 
