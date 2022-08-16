@@ -154,7 +154,13 @@ Install first aptitute and then install npm using aptitude. It may give some pos
 
   sudo apt-get install aptitude
   sudo aptitude install npm
-  
+
+Now if you can check by simply looking for the version using *npm --version*, it should show the installed version if it is success. after this we need to install *yarn* using npm. to do this use the following command
+
+.. code-block:: console
+
+  sudo npm install -g yarn
+
 Build
 -------
 
@@ -180,26 +186,27 @@ Use ./make_deb script to create debian package, the package will be placed in pa
   cd fledge-src
   cd fledge-gui
   ./make_deb
-  cd
   
-it will build a •deb package & store it to *package/build* directory. we can go and check for the same in the above directory.
+it will build a .deb package & store it to *packages/build* directory. we can go and check for the same in the above directory.
 
 .. code-block:: console
 
-  cd package/build
+  cd packages/build
   ls
-  
+
+You should see a .deb pakage for the fledge gui. Now we can proceed for installation. before that we need to copy the .deb package to /var/cache/apt/archives/.
+
 Install
 --------
 
 .. code-block:: console
 
-  sudo cp packages/build/fledge-gui_1.9.2next-224.deb /var/cache/apt/archives/.
+  sudo cp fledge-gui_1.9.2next-224.deb /var/cache/apt/archives/.
   sudo apt install /var/cache/apt/archives/fledge-gui_1.9.2next-224.deb
 
 .. note::
 
-  Version might be different from one to other.
+  Version might be different fledge-gui_1.9.xnext-xxx.deb from one to other.
 
 Verify
 -------
