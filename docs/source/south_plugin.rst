@@ -1,7 +1,7 @@
 South Plugin
 ======
 
-Fledge has various south plugins that can be used to acquire data from various south sensors or devices. It supports most of the common industrial communication protocols. In this section we will look at how to install the required south plugins from source code.
+Fledge has various south plugins that can be used to acquire data from various south sensors or devices. It supports most of the common industrial communication protocols. In this section we will look at how to install the required south plugins from source code. Fledge plugins avaiable may have been implemented using c/c++ or python. Here we will first look at the installation of plugins written in c/c++ and then later we will explore installation of plugins written in python.
 
 .. note::
 
@@ -137,38 +137,37 @@ Now we can proceed for installing south plugin dnp3 for fledge. for this first c
   make -j 4
   sudo make install
   cd
-.. code-block:: console
 
-  cd fledge-src
-  git clone https://github.com/fledge-iot/fledge-south-dnp3.git
-  cd
+Till now we have seen the installation of plugins written in c/c++. Now we will explore installation of pluins written in python.
   
 Fledge-south-http
 -------
+No dependencies we need to install this plugin
+
 
 .. code-block:: console
 
   cd fledge-src
   git clone https://github.com/fledge-iot/fledge-south-http.git
   cd
+  sudo cp -R ~/fledge-src/fledge-south-http/python/fledge/plugins/south/http_south /usr/local/fledge/python/fledge/plugins/south/
   
-Fledge-south-iec61850
--------
-
-.. code-block:: console
-
-  cd fledge-src
-  git clone https://github.com/fledge-iot/fledge-south-iec61850.git
-  cd
   
 Fledge-south-mqtt
 -------
+
+Dependency on mosquitto. the list of dependencies file named requirements.txt is already included in the source file directory of south mqtt plugin. we can install all the dependencies by running the requirements.txt file with pip
 
 .. code-block:: console
 
   cd fledge-src
   git clone https://github.com/fledge-iot/fledge-south-mqtt.git
+  cd fledge-south-mqtt/python
+  pip3 install -r requirements-mqtt-readings.txt
   cd
+  sudo cp -R ~/fledge-src/fledge-south-mqtt/python/fledge/plugins/south/mqtt-readings /usr/local/fledge/python/fledge/plugins/south/
+  
+With this we have explored the installation of some of the most useful south pluins.
 
 
   
