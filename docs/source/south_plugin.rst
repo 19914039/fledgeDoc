@@ -82,7 +82,7 @@ Fledge-south-dnp3
 
   ``It is also required to have Fledge installed from the source code, not from the package repository.`` 
 
-It has library dependency on opendnp3, and again it will have dependency on libboost and libasio. Innstall all the dependencies as below
+It has library dependency on opendnp3, and again the library has a dependency on libboost and libasio. Install all the dependencies as below
 
 .. code-block:: console
 
@@ -97,7 +97,24 @@ It has library dependency on opendnp3, and again it will have dependency on libb
   make -j 4
   sudo make install
   cd
+
+.. note::
+
+ In case if the git clone fails to download the opendnp3 2.x version, then follow the given procedure
+
+Visit the opendnp3 github repository at the link https://github.com/dnp3/opendnp3
+On the right side, look for Releases section and click on +33 releases
+Look for the version 2.4.0, under this click on Assets
+Click on Source code tar.gz to download the same
+
+.. code-block:: console
+
+  cd ~/Downloads
+  tar -XVZF opendnp3-2.4.0.tar.gz
+  cp opendnp3-2.4.0 ~/fledge-src
   
+
+
 after successful installtion you can verify the library installation by visiting the directory */usr/local/lib/*, you should see the 60870 related .so files. Now we can proceed for installing south plugin 104 for fledge. for this first clone to the source code and then install by follwing as given below
   
 .. code-block:: console
