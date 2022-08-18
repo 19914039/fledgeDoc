@@ -140,6 +140,44 @@ Now we can proceed for installing south plugin dnp3 for fledge. for this first c
 
 Till now we have seen the installation of plugins written in c/c++. Now we will explore installation of pluins written in python.
   
+Fledge-south-iec61850
+-------
+
+.. note::
+
+  ``It is also required to have Fledge installed from the source code, not from the package repository.`` 
+
+It has library dependency on libiec61850, so first clone to this library repository using the link https://github.com/mz-automation/libiec61850.git and then install it as below
+
+.. code-block:: console
+
+  cd fledge-src
+  git clone https://github.com/mz-automation/libiec61850.git
+  cd libiec61850
+  mkdir build
+  cd build
+  cmake ..
+  make -j 4
+  sudo make install
+  cd
+  
+Now we can proceed for installing south plugin 61850 for fledge. for this first clone to the source code and then install by follwing as given below
+  
+.. code-block:: console
+
+  cd fledge-src
+  git clone https://github.com/fledge-iot/fledge-south-iec61850.git
+  cd fledge-south-iec61850
+  mkdir build
+  cd build
+  export LIB_61850=~/fledge-src/libiec61850
+  export FLEDGE_ROOT=~/fledge-src/fledge
+  cmake -DFLEDGE_INSTALL=/usr/local/fledge ..
+  make -j 4
+  sudo make install
+  cd
+  
+
 Fledge-south-http
 -------
 No dependencies we need to install this plugin
