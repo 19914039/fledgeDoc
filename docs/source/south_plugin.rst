@@ -90,7 +90,7 @@ It has library dependency on opendnp3, and again the library has a dependency on
   sudo apt-get install libasio-dev
   cd fledge-src
   git clone --recursive -b release-2.x https://github.com/dnp3/opendnp3.git
-  cd opendnp3
+  cd opendnp3-2.4.0
   mkdir build
   cd build
   cmake -DSTATICLIBS=ON ..
@@ -100,7 +100,7 @@ It has library dependency on opendnp3, and again the library has a dependency on
 
 .. note::
 
- In case if the git clone fails to download the opendnp3 2.x version, then follow the given procedure
+In case if the git clone fails to download the opendnp3 2.x version, then follow the given procedure
 
 Visit the opendnp3 github repository at the link https://github.com/dnp3/opendnp3
 On the right side, look for Releases section and click on +33 releases
@@ -110,10 +110,15 @@ Click on Source code tar.gz to download the same
 .. code-block:: console
 
   cd ~/Downloads
-  tar -XVZF opendnp3-2.4.0.tar.gz
-  cp opendnp3-2.4.0 ~/fledge-src
-  
-
+  tar -xvzf opendnp3-2.4.0.tar.gz
+  cp -r opendnp3-2.4.0 ~/fledge-src
+  cd ~/fledge-src
+  cd opendnp3-2.4.0
+  mkdir build
+  cd build
+  cmake -DSTATICLIBS=ON ..
+  make -j 4
+  sudo make install
 
 after successful installtion you can verify the library installation by visiting the directory */usr/local/lib/*, you should see the 60870 related .so files. Now we can proceed for installing south plugin 104 for fledge. for this first clone to the source code and then install by follwing as given below
   
