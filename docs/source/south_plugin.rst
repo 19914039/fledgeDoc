@@ -102,10 +102,11 @@ It has library dependency on opendnp3, and again the library has a dependency on
 
 In case if the git clone fails to download the opendnp3 2.x version, then follow the given procedure
 
-Visit the opendnp3 github repository at the link https://github.com/dnp3/opendnp3
-On the right side, look for Releases section and click on +33 releases
-Look for the version 2.4.0, under this click on Assets
-Click on Source code tar.gz to download the same
+- Visit the opendnp3 github repository at the link https://github.com/dnp3/opendnp3
+- On the right side, look for Releases section and click on +33 releases
+- Look for the version 2.4.0, under this click on Assets
+- Click on Source code tar.gz to download the same
+- Then extract and install using the below commands
 
 .. code-block:: console
 
@@ -119,17 +120,18 @@ Click on Source code tar.gz to download the same
   cmake -DSTATICLIBS=ON ..
   make -j 4
   sudo make install
+  cd
 
-after successful installtion you can verify the library installation by visiting the directory */usr/local/lib/*, you should see the 60870 related .so files. Now we can proceed for installing south plugin 104 for fledge. for this first clone to the source code and then install by follwing as given below
+Now we can proceed for installing south plugin dnp3 for fledge. for this first clone to the source code and then install by follwing as given below
   
 .. code-block:: console
 
   cd fledge-src
-  git clone https://github.com/fledge-iot/fledge-south-iec104.git
-  cd fledge-south-iec104
+  git clone https://github.com/fledge-iot/fledge-south-dnp3.git
+  cd fledge-south-dnp3
   mkdir build
   cd build
-  export LIB_104=~/fledge-src/lib60870/lib60870-C
+  export OPENDNP3_LIB_DIR=~/fledge-src/opendnp3-2.4.0
   export FLEDGE_ROOT=~/fledge-src/fledge
   cmake -DFLEDGE_INSTALL=/usr/local/fledge ..
   make -j 4
