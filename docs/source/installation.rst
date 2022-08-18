@@ -39,7 +39,7 @@ The following prerequisites are needed to build fledge from the source code. The
 
 .. note::
 
-  ``In the actual Fledge installation support page libcurl4-openssl-dev is not listed in the dependecy packages. If we don't install it then we will get an error curl.h file error (No such File) during the fledge compilation.``
+  In the actual Fledge installation support page libcurl4-openssl-dev is not listed in the dependecy packages. If we don't install it then we will get an error curl.h file error (No such File) during the fledge compilation.
 
 Source Directory
 ===========
