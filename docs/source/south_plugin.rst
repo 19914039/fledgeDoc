@@ -205,7 +205,7 @@ Dependency on mosquitto. the list of dependencies file named requirements.txt is
   cd
   sudo cp -R ~/fledge-src/fledge-south-mqtt/python/fledge/plugins/south/mqtt-readings /usr/local/fledge/python/fledge/plugins/south/
   
-With this we have explored the installation of some of the most useful south pluins.
+With this we have explored the installation of some of the most useful south pluins. Now restart the fledge to explore and use the above installed plugins.
 
 
   
