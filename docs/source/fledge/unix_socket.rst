@@ -1,2 +1,0 @@
-Alert on unix socket
-=====
