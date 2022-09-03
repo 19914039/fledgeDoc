@@ -74,6 +74,14 @@ Now we can proceed for installing south plugin Modbus for fledge. for this first
   sudo make install
   cd
 
+This plugin also supports ``float`` data reading form modbus server/slave. for this we need to do the following modification.
+
+.. code:: console
+
+  "type":"float",
+  "register":[1,2]
+  
+an Example configuration can be found here https://github.com/19914039/fledge-raspi/blob/main/microGrid-Read-Fledge.txt
 
 Fledge-south-dnp3
 -------
