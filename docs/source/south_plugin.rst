@@ -83,6 +83,8 @@ This plugin also supports ``float`` data reading form modbus server/slave. for t
   
 an Example configuration can be found here https://github.com/19914039/fledge-raspi/blob/main/microGrid-Read-Fledge.txt
 
+The slave device will store 32-bit float value in two registers. On the other side fledge will also read from two registers as a sigle value. this whole is as per the standatard single precision floating point ieee 754
+
 Fledge-south-dnp3
 -------
 
