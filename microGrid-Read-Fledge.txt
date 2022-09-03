@@ -1,0 +1,89 @@
+{
+  "values": [
+    {
+      "name": "wGenSpeed",
+      "type": "float",
+      "register": [1,2]
+    },
+    {
+      "name": "wGenV",
+      "type": "float",
+      "register": [3,4]
+    },
+    {
+      "name": "wGenI",
+      "type": "float",
+      "register": [5,6]
+    },
+    {
+      "name": "wGenP",
+      "type": "float",
+      "register": [7,8]
+    },
+    {
+      "name": "pVV",
+      "type": "float",
+      "register": [9,10]
+    },
+    {
+      "name": "pVI",
+      "type": "float",
+      "register": [11,12]
+    },
+    {
+      "name": "fCellV",
+      "type": "float",
+      "register": [13,14]
+    },
+    {
+      "name": "fCellI",
+      "type": "float",
+      "register": [15,16]
+    },
+    {
+      "name": "dCV",
+      "type": "float",
+      "register": [17,18]
+    },
+    {
+      "name": "gridF",
+      "type": "float",
+      "register": [19,20]
+    },
+    {
+      "name": "gridV",
+      "type": "float",
+      "register": [21,22]
+    },
+    {
+      "name": "gridI",
+      "type": "float",
+      "register": [23,24]
+    },
+    {
+      "name": "wGStatus",
+      "coil": 1
+    },
+    {
+      "name": "wGAutoStatus",
+      "coil": 2
+    },
+    {
+      "name": "pvMPPtStatus",
+      "coil": 3
+    },
+    {
+      "name": "pvManuStatus",
+      "coil": 4
+    },
+    {
+      "name": "fCellStatus",
+      "coil": 5
+    },
+    {
+      "name": "invStatus",
+      "coil": 6
+    }
+    
+  ]
+}
