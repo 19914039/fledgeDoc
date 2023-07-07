@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'fledge-raspi'
+project = 'fledge-IoT'
 copyright = ''
 author = 'Suresh'
 
