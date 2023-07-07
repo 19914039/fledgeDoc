@@ -31,7 +31,7 @@ Contents
    REST_API
    Dockerization
    Grafana_Interface
-   InfluxDB_Interface
+   Influxdb_Interface
    Logging
    Fluent-bit_Interface
 
