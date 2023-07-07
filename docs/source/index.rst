@@ -27,8 +27,11 @@ Contents
    Configure
    South_Services
    North_Services
-   Notification_plugin
+   Notification_Sevices
    REST_API
-   Interface_with_Grafana
-   Interface_with_InfluxDB
+   Dockerization
+   Grafana_Interface
+   InfluxDB_Interface
    Logging
+   Fluent-bit_Interface
+
