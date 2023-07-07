@@ -1,9 +1,8 @@
 ******************
-Introduction
+Introduction to Fledge
 ******************
 
-Introduction to Fledge
-======
+
 .. Images
 .. |fledge_architecture| image:: images/fledge_architecture.png
 
